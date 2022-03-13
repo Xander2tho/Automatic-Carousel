@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@700&family=Open+Sans:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Oswald:wght@300&family=Poppins:ital,wght@0,400;1,300;1,400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
