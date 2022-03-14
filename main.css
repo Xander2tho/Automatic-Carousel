@@ -5,9 +5,11 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 html{
     font-size: 16px;
 }
+
 body{
     color: black;
 }
@@ -33,9 +35,10 @@ body{
     padding-top: calc(700/1200 * 100%);
     overflow: hidden;
     background-color: red;
+    
 }
 
-/*No matter what the real image size is, with padding-top is easy to modify it */
+/*No matter what the real image size is, with padding-top is easy to modify itb */
 .carousel img{
     position: absolute;
     top: 0;
@@ -44,4 +47,53 @@ body{
     height: 100%;
 }
 
+/*Modifying the arrow (chevron)*/
+.left-arrow{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 147px;
+    cursor: pointer;     
+}
+.left-arrow:hover{
+    background: linear-gradient(to left,rgba(0,0,0,0), rgba(0,0,0,0.6)); 
+    
+}
+.right-arrow{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 147px;
+    cursor: pointer;
+}
+.right-arrow:hover{
+    background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.6));
+}
 
+/*Creating an arrow in the both sides (left and right)*/
+.chevron{ 
+    width: 25px;
+    height: 25px;
+    border: solid rgba(225, 225, 225, 0.15);
+    border-width: 10px 10px 0 0;
+}
+
+.chevron.left{
+    transform: rotate(-135deg);
+}
+.chevron.right{
+    transform: rotate(45deg);
+}
+
+.right-arrow:hover .chevron.left,
+.left-arrow:hover .chevron.right{
+    border-color:solid rgba(25, 232, 225, 0.8);
+}
